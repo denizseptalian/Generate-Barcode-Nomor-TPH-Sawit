@@ -175,7 +175,7 @@ LOGO_SARASWANTI_BASE64 = (
     "UyhVNb2NWdtsqpfxOK7hQq9C0zrobFHfnficOhaH4B2vg+oIr+gGvjwqh1i1hy31T5UDzw/fW6o6XV6n+of7uJ/DdPPAhx2+lOE7"
     "YTMeblmjsYJJJiuBVVumAMLcxYBnFR7vL8AsSW5Iin3UVR404aegN5gdfolmNLF6ssgzi/ogVOb70tNYMVU3yVotiQH9WK28TLeo"
     "IUfGLrXmxgnjwwtEu8ny+CPJfhRPHECZqE28iOMntN5gnmMbpCDhAArFvzV4+EOSW3a3MRG3l2TNW/stWtGE50a4QWh6SYgelc/m"
-    "P/0ObnQMJjvI0s3xU8FQD1OBj+KGeQDaciImSv73YM9i96lioVD+7i9+CeF5P8aLV+bpOrGbXhULHk7Ybc+7a2ZDJR49TSs8KiFjB"
+    "/0ObnQMJjvI0s3xU8FQD1OBj+KGeQDaciImSv73YM9i96lioVD+7i9+CeF5P8aLV+bpOrGbXhULHk7Ybc+7a2ZDJR49TSs8KiFjB"
     "sfH9/qJdl4EvAImpR4YRUCFJ4KB8nxoDEMNfI4tV8ZPhmervZfznAuyd8CUOImqEzTrzgubLzyDi9EUgZLnBbPu9R632KgTrNQnn"
     "m4PA57LDah2DKhx4seMwL9wHjyM8mKuxdN2AkbE/2zX9+P+922Dh8d7fMfHAKbewjpEUkQWEw041mEzHsKRPu5Nra5V2E3pnWbxn"
     "bJ2r5YCBbHuf1kZrtpTXDQISpswMT9bvn8b0NlvYyPDeL2DcW0zx4vDbm5iOzwU9O/A1sMN1Z2KBOAfFJPCAqZgSWYLsnZ68GJux"
@@ -198,6 +198,119 @@ LOGO_SARASWANTI_BASE64 = (
     "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"
+    "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"
@@ -275,26 +388,23 @@ IMG_RADIUS = 45          # Radius sudut bingkai
 # =================================================================
 # KONSTANTA PROPORSI TATA LETAK KARTU (mengikuti desain acuan)
 # Semua nilai berupa FRAKSI (0.0 - 1.0) relatif terhadap lebar/tinggi
+# kartu secara keseluruhan (termasuk bingkai), sehingga tata letak
+# yang sama bisa dipakai baik untuk kuadran PDF maupun gambar PNG,
+# berapa pun ukuran piksel/poin sebenarnya.
 # =================================================================
-# Header: Teks AFD (Pindah ke tengah atas)
-AFD_FRAC_Y_TENGAH = 0.10
-AFD_FRAC_LEBAR_MAKS = 0.84
+LOGO_FRAC_X0, LOGO_FRAC_X1 = 0.072, 0.271   # posisi horizontal logo (kiri atas)
+LOGO_FRAC_Y0, LOGO_FRAC_Y1 = 0.066, 0.175   # posisi vertikal baris header (logo)
+AFD_FRAC_X0 = 0.336                          # awal teks "AFD xx", di kanan logo
+AFD_FRAC_LEBAR_MAKS = 0.55                   # lebar maksimum teks "AFD xx"
 
-# Baris: BLOK - TPH (Di bawah AFD)
-BLOK_FRAC_Y_TENGAH = 0.20
-BLOK_FRAC_LEBAR_MAKS = 0.84
+BLOK_FRAC_Y_TENGAH = 0.267                   # tengah baris "BLOK - TPH"
+BLOK_FRAC_LEBAR_MAKS = 0.84                  # lebar maksimum baris "BLOK - TPH"
 
-# Posisi Logo (Di bawah TPH, di atas QR, dipusatkan)
-LOGO_FRAC_X0, LOGO_FRAC_X1 = 0.35, 0.65
-LOGO_FRAC_Y0, LOGO_FRAC_Y1 = 0.24, 0.38
+QR_FRAC_Y0, QR_FRAC_Y1 = 0.398, 0.870        # area QR (atas - bawah)
+QR_FRAC_LEBAR = 0.615                        # lebar QR relatif thd lebar kartu
 
-# Area QR Code (Di bawah logo)
-QR_FRAC_Y0, QR_FRAC_Y1 = 0.40, 0.87
-QR_FRAC_LEBAR = 0.615
-
-# Footer (Nama PT)
-FOOTER_FRAC_Y_TENGAH = 0.9405
-FOOTER_FRAC_LEBAR_MAKS = 0.84
+FOOTER_FRAC_Y_TENGAH = 0.9405                # tengah teks footer nama PT
+FOOTER_FRAC_LEBAR_MAKS = 0.84                # lebar maksimum teks footer
 
 
 # ---------------------------------------------------------------
@@ -362,26 +472,7 @@ def gambar_satu_kuadran(pdf_canvas, x_awal, y_awal, kebun_kode, afdeling, blok, 
         RADIUS_BINGKAI, stroke=1, fill=0
     )
 
-    # 2. Teks "AFD {xx}" (Sekarang di tengah atas)
-    teks_afd = f"AFD {afdeling_fmt}"
-    lebar_maks_afd = LEBAR_SEL * AFD_FRAC_LEBAR_MAKS
-    ukuran_font_afd = ambil_ukuran_font_muat_pdf(pdf_canvas, teks_afd, 26, 14, lebar_maks_afd)
-    pdf_canvas.setFont("Helvetica-Bold", ukuran_font_afd)
-    pdf_canvas.setFillColor(WARNA_TEKS)
-    y_afd = y_dari_atas(AFD_FRAC_Y_TENGAH) - (ukuran_font_afd * 0.32)
-    pdf_canvas.drawCentredString(titik_tengah_x, y_afd, teks_afd)
-    pdf_canvas.drawCentredString(titik_tengah_x + 0.4, y_afd, teks_afd)  # trik extra bold
-
-    # 3. Baris "BLOK {blok} - TPH {tph}" (center, bold, auto-fit lebar)
-    teks_blok = f"BLOK {blok} - TPH {tph_fmt}"
-    lebar_maks_blok = LEBAR_SEL * BLOK_FRAC_LEBAR_MAKS
-    ukuran_font_blok = ambil_ukuran_font_muat_pdf(pdf_canvas, teks_blok, 20, 10, lebar_maks_blok)
-    pdf_canvas.setFont("Helvetica-Bold", ukuran_font_blok)
-    y_blok = y_dari_atas(BLOK_FRAC_Y_TENGAH) - (ukuran_font_blok * 0.32)
-    pdf_canvas.drawCentredString(titik_tengah_x, y_blok, teks_blok)
-    pdf_canvas.drawCentredString(titik_tengah_x + 0.4, y_blok, teks_blok)
-
-    # 4. Logo Saraswanti (Di tengah, letaknya di bawah teks TPH dan di atas QR)
+    # 2. Logo Saraswanti (kiri atas), aspek rasio asli dipertahankan
     logo_pil = ambil_logo_pil()
     rasio_logo = logo_pil.width / logo_pil.height
     lebar_logo = LEBAR_SEL * (LOGO_FRAC_X1 - LOGO_FRAC_X0)
@@ -390,14 +481,34 @@ def gambar_satu_kuadran(pdf_canvas, x_awal, y_awal, kebun_kode, afdeling, blok, 
     if tinggi_logo > tinggi_logo_maks:
         tinggi_logo = tinggi_logo_maks
         lebar_logo = tinggi_logo * rasio_logo
-        
-    x_logo = titik_tengah_x - (lebar_logo / 2)
+    x_logo = x_awal + LEBAR_SEL * LOGO_FRAC_X0
     y_logo = y_dari_atas(LOGO_FRAC_Y1)
     pdf_canvas.drawImage(
         ImageReader(logo_pil), x_logo, y_logo,
         width=lebar_logo, height=tinggi_logo,
         preserveAspectRatio=True, mask="auto"
     )
+
+    # 3. Teks "AFD {xx}" di kanan logo, sejajar tengah vertikal dengan logo
+    teks_afd = f"AFD {afdeling_fmt}"
+    lebar_maks_afd = LEBAR_SEL * AFD_FRAC_LEBAR_MAKS
+    ukuran_font_afd = ambil_ukuran_font_muat_pdf(pdf_canvas, teks_afd, 26, 14, lebar_maks_afd)
+    pdf_canvas.setFont("Helvetica-Bold", ukuran_font_afd)
+    pdf_canvas.setFillColor(WARNA_TEKS)
+    x_afd = x_awal + LEBAR_SEL * AFD_FRAC_X0
+    y_tengah_header = y_dari_atas((LOGO_FRAC_Y0 + LOGO_FRAC_Y1) / 2)
+    y_afd = y_tengah_header - (ukuran_font_afd * 0.32)
+    pdf_canvas.drawString(x_afd, y_afd, teks_afd)
+    pdf_canvas.drawString(x_afd + 0.4, y_afd, teks_afd)  # trik extra bold
+
+    # 4. Baris "BLOK {blok} - TPH {tph}" (center, bold, auto-fit lebar)
+    teks_blok = f"BLOK {blok} - TPH {tph_fmt}"
+    lebar_maks_blok = LEBAR_SEL * BLOK_FRAC_LEBAR_MAKS
+    ukuran_font_blok = ambil_ukuran_font_muat_pdf(pdf_canvas, teks_blok, 20, 10, lebar_maks_blok)
+    pdf_canvas.setFont("Helvetica-Bold", ukuran_font_blok)
+    y_blok = y_dari_atas(BLOK_FRAC_Y_TENGAH) - (ukuran_font_blok * 0.32)
+    pdf_canvas.drawCentredString(titik_tengah_x, y_blok, teks_blok)
+    pdf_canvas.drawCentredString(titik_tengah_x + 0.4, y_blok, teks_blok)
 
     # 5. QR Code besar, center (payload = kode lengkap KEBUN_AFxx_Blok_TPHxxx)
     payload_qr = buat_kode_lengkap(kebun_kode, afdeling, blok, nomor_tph)
@@ -510,22 +621,35 @@ def buat_gambar_barcode_individual(kebun_kode, afdeling, blok, nomor_tph) -> Ima
         radius=IMG_RADIUS, outline=WARNA_HIJAU_HEX, width=IMG_BORDER_TEBAL
     )
 
-    # 2. Teks "AFD {xx}" (Center, letaknya paling atas)
+    # 2. Logo Saraswanti (kiri atas), aspek rasio asli dipertahankan
+    logo_pil = ambil_logo_pil()
+    rasio_logo = logo_pil.width / logo_pil.height
+    lebar_logo = int(IMG_LEBAR * (LOGO_FRAC_X1 - LOGO_FRAC_X0))
+    tinggi_logo_maks = int(IMG_TINGGI * (LOGO_FRAC_Y1 - LOGO_FRAC_Y0))
+    tinggi_logo = int(lebar_logo / rasio_logo)
+    if tinggi_logo > tinggi_logo_maks:
+        tinggi_logo = tinggi_logo_maks
+        lebar_logo = int(tinggi_logo * rasio_logo)
+    x_logo = int(IMG_LEBAR * LOGO_FRAC_X0)
+    y_logo = int(IMG_TINGGI * LOGO_FRAC_Y0)
+    logo_resize = logo_pil.resize((lebar_logo, tinggi_logo), Image.LANCZOS)
+    kanvas_gambar.paste(logo_resize, (x_logo, y_logo), logo_resize)  # alpha channel sbg mask
+
+    # 3. Teks "AFD {xx}" di kanan logo, sejajar tengah vertikal dengan logo
     teks_afd = f"AFD {afdeling_fmt}"
     lebar_maks_afd = IMG_LEBAR * AFD_FRAC_LEBAR_MAKS
     font_afd, kotak_afd = ambil_font_muat_pil(
         juru_gambar, teks_afd, 76, 40, lebar_maks_afd, KETEBALAN_STROKE
     )
-    lebar_teks_afd = kotak_afd[2] - kotak_afd[0]
-    y_tengah_afd = IMG_TINGGI * AFD_FRAC_Y_TENGAH
-    x_afd = (IMG_LEBAR - lebar_teks_afd) / 2 - kotak_afd[0]
-    y_afd = y_tengah_afd - (kotak_afd[1] + kotak_afd[3]) / 2
+    x_afd = int(IMG_LEBAR * AFD_FRAC_X0)
+    y_tengah_header = IMG_TINGGI * (LOGO_FRAC_Y0 + LOGO_FRAC_Y1) / 2
+    y_afd = y_tengah_header - (kotak_afd[1] + kotak_afd[3]) / 2
     juru_gambar.text(
         (x_afd, y_afd), teks_afd, font=font_afd, fill=WARNA_TEKS_HEX,
         stroke_width=KETEBALAN_STROKE, stroke_fill=WARNA_TEKS_HEX
     )
 
-    # 3. Baris "BLOK {blok} - TPH {tph}" (Center, letaknya di bawah AFD)
+    # 4. Baris "BLOK {blok} - TPH {tph}" (center, bold, auto-fit lebar)
     teks_blok = f"BLOK {blok} - TPH {tph_fmt}"
     lebar_maks_blok = IMG_LEBAR * BLOK_FRAC_LEBAR_MAKS
     font_blok, kotak_blok = ambil_font_muat_pil(
@@ -539,21 +663,6 @@ def buat_gambar_barcode_individual(kebun_kode, afdeling, blok, nomor_tph) -> Ima
         (x_blok, y_blok), teks_blok, font=font_blok, fill=WARNA_TEKS_HEX,
         stroke_width=KETEBALAN_STROKE, stroke_fill=WARNA_TEKS_HEX
     )
-
-    # 4. Logo Saraswanti (Center, letaknya di bawah TPH dan di atas QR)
-    logo_pil = ambil_logo_pil()
-    rasio_logo = logo_pil.width / logo_pil.height
-    lebar_logo = int(IMG_LEBAR * (LOGO_FRAC_X1 - LOGO_FRAC_X0))
-    tinggi_logo_maks = int(IMG_TINGGI * (LOGO_FRAC_Y1 - LOGO_FRAC_Y0))
-    tinggi_logo = int(lebar_logo / rasio_logo)
-    if tinggi_logo > tinggi_logo_maks:
-        tinggi_logo = tinggi_logo_maks
-        lebar_logo = int(tinggi_logo * rasio_logo)
-
-    x_logo = (IMG_LEBAR - lebar_logo) // 2
-    y_logo = int(IMG_TINGGI * LOGO_FRAC_Y0)
-    logo_resize = logo_pil.resize((lebar_logo, tinggi_logo), Image.LANCZOS)
-    kanvas_gambar.paste(logo_resize, (x_logo, y_logo), logo_resize)
 
     # 5. QR Code besar, center (payload = kode lengkap)
     payload_qr = buat_kode_lengkap(kebun_kode, afdeling, blok, nomor_tph)
