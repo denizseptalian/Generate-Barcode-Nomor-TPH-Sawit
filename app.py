@@ -134,18 +134,24 @@ def gambar_satu_kuadran(pdf_canvas, x_awal, y_awal, afdeling, blok, nomor_tph):
         RADIUS_BINGKAI, stroke=1, fill=0
     )
 
-    # 2. Baris teks judul (Baris 1: AFD)
-    y_baris_1 = y_awal + TINGGI_SEL - PADDING_SEL - 12
-    pdf_canvas.setFont("Helvetica-Bold", 13)
+    # 2. Baris teks judul (Baris 1: AFD) — font diperbesar & dipertegas
+    UKURAN_FONT_BARIS_1 = 20
+    UKURAN_FONT_BARIS_2 = 17
+
+    y_baris_1 = y_awal + TINGGI_SEL - PADDING_SEL - 18
+    pdf_canvas.setFont("Helvetica-Bold", UKURAN_FONT_BARIS_1)
     pdf_canvas.setFillColor(WARNA_TEKS)
     pdf_canvas.drawCentredString(titik_tengah_x, y_baris_1, f"AFD {afdeling}")
+    # Trik "extra bold": gambar ulang teks dengan sedikit offset agar goresan
+    # huruf terlihat lebih tebal/pekat saat dicetak
+    pdf_canvas.drawCentredString(titik_tengah_x + 0.4, y_baris_1, f"AFD {afdeling}")
 
     # 3. Baris teks judul (Baris 2: BLOK - TPH)
-    y_baris_2 = y_baris_1 - 18
-    pdf_canvas.setFont("Helvetica-Bold", 12)
-    pdf_canvas.drawCentredString(
-        titik_tengah_x, y_baris_2, f"BLOK {blok} - TPH {nomor_tph}"
-    )
+    y_baris_2 = y_baris_1 - 24
+    pdf_canvas.setFont("Helvetica-Bold", UKURAN_FONT_BARIS_2)
+    teks_baris_2 = f"BLOK {blok} - TPH {nomor_tph}"
+    pdf_canvas.drawCentredString(titik_tengah_x, y_baris_2, teks_baris_2)
+    pdf_canvas.drawCentredString(titik_tengah_x + 0.4, y_baris_2, teks_baris_2)
 
     # 4. Payload QR Code (format sesuai spesifikasi)
     payload_qr = f"AFD {afdeling} - BLOK {blok} - TPH {nomor_tph}"
@@ -227,30 +233,37 @@ def buat_gambar_barcode_individual(afdeling, blok, nomor_tph) -> Image.Image:
         radius=IMG_RADIUS, outline=WARNA_HIJAU_HEX, width=IMG_BORDER_TEBAL
     )
 
-    font_baris_1 = ambil_font_bold(46)
-    font_baris_2 = ambil_font_bold(40)
+    font_baris_1 = ambil_font_bold(60)
+    font_baris_2 = ambil_font_bold(50)
+    KETEBALAN_STROKE = 2  # Menambah ketebalan agar teks terlihat lebih tegas
 
     teks_baris_1 = f"AFD {afdeling}"
     teks_baris_2 = f"BLOK {blok} - TPH {nomor_tph}"
 
     # 2. Baris judul 1 (center horizontal)
-    kotak_teks_1 = juru_gambar.textbbox((0, 0), teks_baris_1, font=font_baris_1)
+    kotak_teks_1 = juru_gambar.textbbox(
+        (0, 0), teks_baris_1, font=font_baris_1, stroke_width=KETEBALAN_STROKE
+    )
     lebar_teks_1 = kotak_teks_1[2] - kotak_teks_1[0]
     tinggi_teks_1 = kotak_teks_1[3] - kotak_teks_1[1]
     y_baris_1 = IMG_MARGIN + 55
     juru_gambar.text(
         ((IMG_LEBAR - lebar_teks_1) / 2, y_baris_1),
-        teks_baris_1, font=font_baris_1, fill=WARNA_TEKS_HEX
+        teks_baris_1, font=font_baris_1, fill=WARNA_TEKS_HEX,
+        stroke_width=KETEBALAN_STROKE, stroke_fill=WARNA_TEKS_HEX
     )
 
     # 3. Baris judul 2 (center horizontal, di bawah baris 1)
-    kotak_teks_2 = juru_gambar.textbbox((0, 0), teks_baris_2, font=font_baris_2)
+    kotak_teks_2 = juru_gambar.textbbox(
+        (0, 0), teks_baris_2, font=font_baris_2, stroke_width=KETEBALAN_STROKE
+    )
     lebar_teks_2 = kotak_teks_2[2] - kotak_teks_2[0]
     tinggi_teks_2 = kotak_teks_2[3] - kotak_teks_2[1]
     y_baris_2 = y_baris_1 + tinggi_teks_1 + 25
     juru_gambar.text(
         ((IMG_LEBAR - lebar_teks_2) / 2, y_baris_2),
-        teks_baris_2, font=font_baris_2, fill=WARNA_TEKS_HEX
+        teks_baris_2, font=font_baris_2, fill=WARNA_TEKS_HEX,
+        stroke_width=KETEBALAN_STROKE, stroke_fill=WARNA_TEKS_HEX
     )
 
     # 4. QR Code — dibuat sebesar mungkin mengisi sisa ruang, lalu center
