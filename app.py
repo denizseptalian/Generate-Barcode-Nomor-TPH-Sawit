@@ -135,8 +135,8 @@ def gambar_satu_kuadran(pdf_canvas, x_awal, y_awal, afdeling, blok, nomor_tph):
     )
 
     # 2. Baris teks judul (Baris 1: AFD) — font diperbesar & dipertegas
-    UKURAN_FONT_BARIS_1 = 28
-    UKURAN_FONT_BARIS_2 = 24
+    UKURAN_FONT_BARIS_1 = 20
+    UKURAN_FONT_BARIS_2 = 17
 
     y_baris_1 = y_awal + TINGGI_SEL - PADDING_SEL - 18
     pdf_canvas.setFont("Helvetica-Bold", UKURAN_FONT_BARIS_1)
@@ -147,7 +147,10 @@ def gambar_satu_kuadran(pdf_canvas, x_awal, y_awal, afdeling, blok, nomor_tph):
     pdf_canvas.drawCentredString(titik_tengah_x + 0.4, y_baris_1, f"AFD {afdeling}")
 
     # 3. Baris teks judul (Baris 2: BLOK - TPH)
-    y_baris_2 = y_baris_1 - 24
+    # Ditambahkan jarak ekstra setara 1x "enter" (baris kosong) di antara
+    # baris AFD dan baris BLOK
+    JARAK_ENTER_TAMBAHAN = UKURAN_FONT_BARIS_1
+    y_baris_2 = y_baris_1 - 24 - JARAK_ENTER_TAMBAHAN
     pdf_canvas.setFont("Helvetica-Bold", UKURAN_FONT_BARIS_2)
     teks_baris_2 = f"BLOK {blok} - TPH {nomor_tph}"
     pdf_canvas.drawCentredString(titik_tengah_x, y_baris_2, teks_baris_2)
@@ -254,12 +257,15 @@ def buat_gambar_barcode_individual(afdeling, blok, nomor_tph) -> Image.Image:
     )
 
     # 3. Baris judul 2 (center horizontal, di bawah baris 1)
+    # Ditambahkan jarak ekstra setara 1x "enter" (baris kosong) di antara
+    # baris AFD dan baris BLOK
     kotak_teks_2 = juru_gambar.textbbox(
         (0, 0), teks_baris_2, font=font_baris_2, stroke_width=KETEBALAN_STROKE
     )
     lebar_teks_2 = kotak_teks_2[2] - kotak_teks_2[0]
     tinggi_teks_2 = kotak_teks_2[3] - kotak_teks_2[1]
-    y_baris_2 = y_baris_1 + tinggi_teks_1 + 25
+    JARAK_ENTER_TAMBAHAN = tinggi_teks_1
+    y_baris_2 = y_baris_1 + tinggi_teks_1 + 25 + JARAK_ENTER_TAMBAHAN
     juru_gambar.text(
         ((IMG_LEBAR - lebar_teks_2) / 2, y_baris_2),
         teks_baris_2, font=font_baris_2, fill=WARNA_TEKS_HEX,
