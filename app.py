@@ -136,8 +136,8 @@ def gambar_satu_kuadran(pdf_canvas, x_awal, y_awal, afdeling, blok, nomor_tph):
     )
 
     # 2. Baris teks judul (Baris 1: AFD) — font diperbesar & dipertegas
-    UKURAN_FONT_BARIS_1 = 30
-    UKURAN_FONT_BARIS_2 = 26
+    UKURAN_FONT_BARIS_1 = 20
+    UKURAN_FONT_BARIS_2 = 17
 
     # Jarak dari tepi atas bingkai ke baris judul pertama (dibuat lebih
     # longgar agar teks tidak terlalu mepet ke garis bingkai)
@@ -417,3 +417,4 @@ if st.button("🚀 Generate", type="primary", use_container_width=True):
                     afdeling_final, blok_final, tph_awal_final
                 )
                 st.image(gambar_contoh, use_container_width=True)
+              
