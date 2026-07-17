@@ -135,8 +135,8 @@ def gambar_satu_kuadran(pdf_canvas, x_awal, y_awal, afdeling, blok, nomor_tph):
     )
 
     # 2. Baris teks judul (Baris 1: AFD) — font diperbesar & dipertegas
-    UKURAN_FONT_BARIS_1 = 20
-    UKURAN_FONT_BARIS_2 = 17
+    UKURAN_FONT_BARIS_1 = 30
+    UKURAN_FONT_BARIS_2 = 26
 
     y_baris_1 = y_awal + TINGGI_SEL - PADDING_SEL - 18
     pdf_canvas.setFont("Helvetica-Bold", UKURAN_FONT_BARIS_1)
