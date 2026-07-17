@@ -64,23 +64,13 @@ html, body, [data-testid="stAppViewContainer"] {
     margin-bottom: 1.3rem;
     box-shadow: 0 8px 22px rgba(27, 122, 61, 0.28);
 }
+.app-header-emoji { font-size: 2.6rem; line-height: 1; }
 .app-header-title {
     color: #ffffff; font-size: 1.55rem; font-weight: 800;
     letter-spacing: .3px; margin-top: .3rem;
 }
 .app-header-subtitle {
     color: rgba(255,255,255,0.92); font-size: .92rem; margin-top: .15rem;
-}
-
-/* ---- Independent Logo ---- */
-.independent-logo-wrap {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0.8rem;
-}
-.independent-logo-emoji {
-    font-size: 2.6rem;
-    line-height: 1;
 }
 
 /* ---- Toggle suara ---- */
@@ -430,18 +420,11 @@ def _render_scan_qr_mode_foto(suara_aktif_qr):
 # ============================================================
 # UI — mobile-first
 # ============================================================
-# Modifikasi header untuk menghapus logo dan meletakkannya secara terpisah di bawah teks
 st.markdown("""
 <div class="app-header">
     <div class="app-header-title">Scan QR Code</div>
     <div class="app-header-subtitle">Barcode TPH — Kebun Sawit</div>
-</div>
-""", unsafe_allow_html=True)
-
-# Tambahkan logo mandiri di luar header, di antara teks dan kamera/QR
-st.markdown("""
-<div class="independent-logo-wrap">
-    <div class="independent-logo-emoji">📱</div>
+    <div class="app-header-emoji" style="margin-top: 15px;">📱</div>
 </div>
 """, unsafe_allow_html=True)
 
