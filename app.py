@@ -90,7 +90,7 @@ TINGGI_SEL = (TINGGI_HALAMAN - (2 * MARGIN_LUAR) - JARAK_ANTAR_SEL) / 2
 IMG_LEBAR = 900         # Lebar kanvas gambar (piksel)
 IMG_TINGGI = 1300        # Tinggi kanvas gambar (piksel)
 IMG_MARGIN = 30          # Jarak bingkai dari tepi gambar
-IMG_BORDER_TEBAL = 8     # Ketebalan garis bingkai
+IMG_BORDER_TEBAL = 14    # Ketebalan garis bingkai (dipertebal agar lebih tegas)
 IMG_RADIUS = 45          # Radius sudut bingkai
 
 
@@ -126,9 +126,10 @@ def gambar_satu_kuadran(pdf_canvas, x_awal, y_awal, afdeling, blok, nomor_tph):
     """
     titik_tengah_x = x_awal + (LEBAR_SEL / 2)
 
-    # 1. Gambar bingkai hijau
+    # 1. Gambar bingkai hijau (dipertebal agar lebih tegas)
+    TEBAL_GARIS_BINGKAI = 3.5
     pdf_canvas.setStrokeColor(WARNA_HIJAU)
-    pdf_canvas.setLineWidth(2)
+    pdf_canvas.setLineWidth(TEBAL_GARIS_BINGKAI)
     pdf_canvas.roundRect(
         x_awal, y_awal, LEBAR_SEL, TINGGI_SEL,
         RADIUS_BINGKAI, stroke=1, fill=0
@@ -138,7 +139,10 @@ def gambar_satu_kuadran(pdf_canvas, x_awal, y_awal, afdeling, blok, nomor_tph):
     UKURAN_FONT_BARIS_1 = 30
     UKURAN_FONT_BARIS_2 = 26
 
-    y_baris_1 = y_awal + TINGGI_SEL - PADDING_SEL - 18
+    # Jarak dari tepi atas bingkai ke baris judul pertama (dibuat lebih
+    # longgar agar teks tidak terlalu mepet ke garis bingkai)
+    JARAK_ATAS_JUDUL = 58
+    y_baris_1 = y_awal + TINGGI_SEL - JARAK_ATAS_JUDUL
     pdf_canvas.setFont("Helvetica-Bold", UKURAN_FONT_BARIS_1)
     pdf_canvas.setFillColor(WARNA_TEKS)
     pdf_canvas.drawCentredString(titik_tengah_x, y_baris_1, f"AFD {afdeling}")
@@ -249,7 +253,9 @@ def buat_gambar_barcode_individual(afdeling, blok, nomor_tph) -> Image.Image:
     )
     lebar_teks_1 = kotak_teks_1[2] - kotak_teks_1[0]
     tinggi_teks_1 = kotak_teks_1[3] - kotak_teks_1[1]
-    y_baris_1 = IMG_MARGIN + 55
+    # Jarak dari tepi atas bingkai ke baris judul pertama (dibuat lebih
+    # longgar agar teks tidak terlalu mepet ke garis bingkai)
+    y_baris_1 = IMG_MARGIN + 135
     juru_gambar.text(
         ((IMG_LEBAR - lebar_teks_1) / 2, y_baris_1),
         teks_baris_1, font=font_baris_1, fill=WARNA_TEKS_HEX,
